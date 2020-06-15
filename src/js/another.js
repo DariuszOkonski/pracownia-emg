@@ -3,6 +3,7 @@ uiQuery = {
     dataButtonHamburgerClose: "[data-button-hamburger-close]",
     dataNavigationMobileOn: "[data-navigation-mobile-on]",
     dataNavigationLink: "[data-navigation-link]",
+    dataNavigationBody: "[data-navigation-body]",
 }
 
 uiElements = {
@@ -10,6 +11,7 @@ uiElements = {
     btnClose: document.querySelector(uiQuery.dataButtonHamburgerClose),
     navMobileOn: document.querySelector(uiQuery.dataNavigationMobileOn),
     dataNavLinks: document.querySelectorAll(uiQuery.dataNavigationLink),
+    dataNavBody: document.querySelector(uiQuery.dataNavigationBody),
 }
 
 const addEventListeners = () => {
@@ -40,3 +42,22 @@ const removNavigationLinkActive = () => {
     uiElements.dataNavLinks.forEach(link => link.classList.remove("navigation__link--active"));
 }
 
+// scroll change navigadion look depends of scrollY position=======================================
+const scrollPosition = {
+    callAt: 400,
+    overCallAt: false,
+    belowCallAt: false,
+}
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > scrollPosition.callAt && !scrollPosition.overCallAt) {
+        scrollPosition.overCallAt = true;
+        scrollPosition.belowCallAt = false;
+        uiElements.dataNavBody.classList.add('navigation__body--small');
+
+    } else if(window.scrollY <= 200 && !scrollPosition.belowCallAt) {
+        scrollPosition.overCallAt = false;
+        scrollPosition.belowCallAt = true;
+        uiElements.dataNavBody.classList.remove('navigation__body--small');
+    }
+})
