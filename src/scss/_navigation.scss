@@ -7,6 +7,10 @@
         display: flex;
         justify-content: flex-end         ;
         align-items: center;
+
+        @media(min-width: $tablet) {
+            display: none;
+        }
     }
 
     &__button {
@@ -20,6 +24,10 @@
         height: 2rem;
         background-color: transparent;
         outline: none;
+
+        @media(min-width: $tablet) {
+            display: none;
+        }
     }
 
     &__icon {
@@ -39,9 +47,19 @@
         
         transition: all $show-button-time ease-in;
 
+        @media(min-width: $tablet) {
+            backdrop-filter: none;
+            background-color: transparent;
+        }
+
         &--hide {
             transform: translateX(100%);
             opacity: 0;
+        }
+
+        @media(min-width: $tablet) {
+            transform: translateX(0);
+            opacity: 1;
         }
     }
 
@@ -57,6 +75,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media(min-width: $tablet) {
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5rem;
+            width: 100%;
+            padding: 0 1rem;
+            border-bottom: 1px solid $light-color;
+
+            background-color: rgba(0, 52, 89, 0.5);
+            flex-direction: row;
+        }
+    }
+
+    &__logo {
+        display: none;
+        
+        @media(min-width: $tablet) {
+            display: block;
+            color: $light-color;
+            font-size: 3.125rem;
+            font-family: 'Pattaya', sans-serif;
+
+            span {
+                color: $third-color;
+            }
+        }
     }
 
     &__items {
@@ -66,7 +112,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start
+        align-items: flex-start;
+
+        @media(min-width: $tablet) {
+            height: inherit;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 
     &__item {
