@@ -1,12 +1,18 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Pattaya&display=swap');
 
 @import "_variables";
+@import "_start";
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: gray;
+  font-family: 'Lato', sans-serif;
 }
 
 
-h1 {
-  color: $primary-color;
-}
+// font-family: 'Pattaya', sans-serif;
