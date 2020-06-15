@@ -1,9 +1,17 @@
-#start {
+.start {
     width: 100%;
     min-height: 100vh;
+
     
-    
-    h1 {
-        color: $primary-color;
+    &__header {
+        color: red;
+    }
+
+    &__span {
+        color: $secondary_color;
+    }
+
+    &__paragraph {
+        color: green;
     }
 }

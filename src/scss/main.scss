@@ -5,12 +5,29 @@
 @import "_variables";
 @import "_start";
 
-
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  box-sizing: inherit;
+}
 
 body {
-  font-family: 'Lato', sans-serif;
-  box-sizing: inherit;
+  font-size: 100%;
+
+  @media(min-width: $tablet) {
+    font-size: 100%;
+  }
 }
 
 
 // font-family: 'Pattaya', sans-serif;
+
+// utilities =================
+.border-bottom::after {
+  content: '';
+  display: block;
+  margin-top: 6px;
+  width: 60px;
+  height: 2px;
+  background-color: $secondary-color;
+}
