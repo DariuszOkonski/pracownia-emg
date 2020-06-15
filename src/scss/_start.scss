@@ -1,17 +1,30 @@
 .start {
     width: 100%;
     min-height: 100vh;
+    color: $light-color;
+    padding: 0.5rem;
 
+    background-image: linear-gradient(rgba(08, 15, 15, 0.7), rgba(08, 15, 15, 0.7)),  url('../assets/img/start-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start             ;
     
     &__header {
-        color: red;
+        font-size: 1.5rem;
     }
 
     &__span {
         color: $secondary_color;
+        font-size: 1.7rem;
     }
 
     &__paragraph {
-        color: green;
+        margin-top: 3.25rem;
+        font-size: 1rem;
     }
 }
