@@ -3,6 +3,7 @@
 
 @import "_reset";
 @import "_variables";
+@import "_navigation";
 @import "_start";
 
 html {
@@ -13,6 +14,7 @@ html {
 
 body {
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 

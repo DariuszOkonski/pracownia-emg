@@ -3,7 +3,7 @@
     width: 100%;
     background-color: transparent;
 
-    &__mobile {
+    &__mobile-off {
         display: flex;
         justify-content: flex-end         ;
         align-items: center;
@@ -17,10 +17,17 @@
         height: 2rem;
     }
 
-    &__desktop {
-        display: none;
+    &__mobile-on {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 10vh;
-        background-color: red;
+        height: 100vh;
+        background-color: green;
+        transition: all 0.2s ease-in;
+
+        &--hide {
+            transform: translateX(100%);
+        }
     }
 }
