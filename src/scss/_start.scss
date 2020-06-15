@@ -23,15 +23,27 @@
         font-size: 2rem;
         letter-spacing: 1px;
         font-weight: 300;
+
+        @media(min-width: $tablet) {
+            font-size: 5rem;
+        }
     }
 
     &__span {
         color: $secondary_color;
         font-size: 2.375rem;
+
+        @media(min-width: $tablet) {
+            font-size: 6.625rem;
+        }
     }
 
     &__paragraph {
         margin-top: 3.25rem;
         font-size: 1.25rem;
+
+        @media(min-width: $tablet) {
+            font-size: 2.125rem;
+        }
     }
 }
