@@ -29,4 +29,9 @@ body {
   width: 60px;
   height: 2px;
   background-color: $secondary-color;
+
+  @media(min-width: $tablet) {
+    width: 188px;
+    margin-top: 16px;
+  }
 }
