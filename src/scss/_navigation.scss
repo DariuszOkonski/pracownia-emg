@@ -9,12 +9,21 @@
         align-items: center;
     }
 
-    &__icon {
+    &__button {
+        position: absolute;
+        top: 0;
+        right: 0;
         margin-top: 0.5rem;
         margin-right: 0.5rem;
-        fill: $third-color;
+        border: none;
         width: 2rem;
         height: 2rem;
+        background-color: transparent;
+        outline: none;
+    }
+
+    &__icon {
+        fill: $third-color;
     }
 
     &__mobile-on {
@@ -23,11 +32,62 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: green;
-        transition: all 0.2s ease-in;
+        opacity: 1;
+        
+        background-color: rgba(0, 52, 89, 0.2);
+        backdrop-filter: blur(4px);
+        
+        transition: all $show-button-time ease-in;
 
         &--hide {
             transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+
+    &__body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: $primary-color;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__items {
+        width: 100%;
+        height: 16rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+
+    &__item {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-left: 1rem;
+    }
+    
+    &__link {
+        display: inline-block;
+        color: $light-color;
+        text-decoration: none;
+        font-size: 1.375rem ;
+
+        &--active::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $third-color;
         }
     }
 }
