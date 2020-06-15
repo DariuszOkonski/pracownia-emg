@@ -18,7 +18,22 @@
     @media(min-width: $mobile-medium) {
         padding: 1rem;
     }
+
+    @media(min-width: $tablet) {
+        background-image: linear-gradient(rgba(08, 15, 15, 0.7), rgba(08, 15, 15, 0.7)),  url('../assets/img/start-tablet.jpg');
+    }
+
+    @media(min-width: $desktop) {
+        background-image: linear-gradient(rgba(08, 15, 15, 0.7), rgba(08, 15, 15, 0.7)),  url('../assets/img/start-desktop.jpg');
+    }
     
+    &__container {
+        @media(min-width: $desktop-large) {
+            width: $desktop-large;
+            margin: 0 auto;
+        }
+    }
+
     &__header {
         font-size: 2rem;
         letter-spacing: 1px;
@@ -26,6 +41,10 @@
 
         @media(min-width: $tablet) {
             font-size: 5rem;
+        }
+
+        @media(min-width: $desktop) {
+            font-size: 6.25rem;
         }
     }
 
@@ -36,6 +55,10 @@
         @media(min-width: $tablet) {
             font-size: 6.625rem;
         }
+
+        @media(min-width: $desktop) {
+            font-size: 7.875rem;
+        }
     }
 
     &__paragraph {
@@ -44,6 +67,10 @@
 
         @media(min-width: $tablet) {
             font-size: 2.125rem;
+        }
+
+        @media(min-width: $desktop) {
+            font-size: 2.375rem;
         }
     }
 }
