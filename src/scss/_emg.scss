@@ -1,7 +1,49 @@
 .emg {
     width: 100%;
     min-height: 100vh;
-    background-color: #fff;
-    padding: 0.5rem;
     padding-top: 3.125rem;
+
+    background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-mobile.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__boxes-container {
+        background-color: rgba($color: $primary-color, $alpha: 0.2);
+        color: $primary-color;
+        margin-top: 0.75rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
+
+.single-box {
+    padding: 0.5rem;
+    color: $primary-color;
+
+    &__icon-container {
+        text-align: center;
+    }
+
+    &__icon {
+        fill: #F77F00;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__header {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    &__paragraph {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+        line-height: 1.1875rem;
+    }
 }
