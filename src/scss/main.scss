@@ -32,6 +32,10 @@ body {
   @media(min-width: $tablet) {
     font-size: 2.375rem;
   }
+
+  @media(min-width: $desktop) {
+    font-size: 3.375rem;
+  }
 }
 
 .header::after {
@@ -40,9 +44,18 @@ body {
   margin-top: 6px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.75rem;
   width: 40px;
   height: 2px;
   background-color: $secondary-color;
+  
+  @media(min-width: $tablet) {
+    margin-bottom: 1.75rem;
+  }
+
+  @media(min-width: $desktop) {
+    margin-bottom: 2.75rem;
+  }
 }
 
 // this border starts from left
