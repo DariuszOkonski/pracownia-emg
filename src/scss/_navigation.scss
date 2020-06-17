@@ -40,7 +40,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        // height: 100vh;
+        height: 100vh;
         opacity: 1;
         
         background-color: rgba(0, 52, 89, 0.2);
@@ -51,6 +51,7 @@
         @media(min-width: $tablet) {
             backdrop-filter: none;
             background-color: transparent;
+            height: 0;
         }
 
         &--hide {
@@ -142,6 +143,13 @@
         color: $light-color;
         text-decoration: none;
         font-size: 1.375rem ;
+        transition: color .2s ease-in;
+
+        @media(min-width: $desktop) {
+            &:hover {
+                color: $secondary-color;
+            }
+        }
 
         &::after {
             content: '';

@@ -63,10 +63,10 @@
             text-transform: uppercase;
             transition: all .2s ease-in;
             border-bottom: 1px solid transparent;
-            cursor: pointer;
             
             @media(min-width: $desktop) {
                 &:hover {
+                    cursor: pointer;
                     color: $third-color;
                     border-bottom: 1px solid $third-color;
                 }
