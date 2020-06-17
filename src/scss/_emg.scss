@@ -1,18 +1,22 @@
 .emg {
     width: 100%;
     min-height: 100vh;
-    padding-top: 3.125rem;
 
-    @media(min-width: $tablet) {
-        padding-top: 5.125rem;
-    }
-
+    
     background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-mobile.jpg');
-
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
+    @media(min-width: $tablet) {
+        background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-tablet.jpg');
+    }
 
+    @media(min-width: $desktop) {
+        background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-desktop.jpg');
+    }
+    
     &__full-background {
         @media(min-width: $desktop-large) {
             background-color: rgba($color: $primary-color, $alpha: 0.2);    
