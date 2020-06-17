@@ -81,3 +81,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.space-top {
+  padding-top: 3.125rem;
+
+  @media(min-width: $tablet) {
+    padding-top: 5.125rem;
+  }
+}
