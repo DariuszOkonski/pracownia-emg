@@ -6,6 +6,7 @@
 @import "_navigation";
 @import "_start";
 @import "_emg";
+@import "_examination";
 
 html {
   font-family: 'Lato', sans-serif;
@@ -28,6 +29,10 @@ body {
   font-size: 1.8rem;
   font-weight: 300;
   color: $primary-color;
+
+  &--light-color {
+    color: $light-color;
+  }
 
   @media(min-width: $tablet) {
     font-size: 2.375rem;
