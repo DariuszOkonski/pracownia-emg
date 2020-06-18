@@ -1,0 +1,18 @@
+.prices {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-mobile.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    @media(min-width: $tablet) {
+        background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-tablet.jpg');
+    }
+
+    @media(min-width: $desktop) {
+        background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-desktop.jpg');
+    }
+}
