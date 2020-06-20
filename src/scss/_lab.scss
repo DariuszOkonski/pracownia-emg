@@ -1,0 +1,43 @@
+.lab {
+    width: 100%;
+    min-height: 100vh;
+    // background-color: grey;
+
+    background-image: linear-gradient(rgba(0, 52, 89, 0.7), rgba(0, 52, 89, 0.7)),  url('../assets/img/start-mobile.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    @media(min-width: $tablet) {
+        background-image: linear-gradient(rgba(0, 52, 89, 0.7), rgba(0, 52, 89, 0.7)),  url('../assets/img/start-tablet.jpg');
+    }
+
+    @media(min-width: $desktop) {
+        background-image: linear-gradient(rgba(0, 52, 89, 0.7), rgba(0, 52, 89, 0.7)),  url('../assets/img/start-desktop.jpg');
+    }
+
+    &__box-container {
+        width: 100%;
+        padding: 0.5rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+
+        @media(min-width: $tablet) {
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        @media(min-width: $desktop-large) {
+            max-width: $desktop-large;
+            margin-left: auto;
+            margin-right: auto;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
