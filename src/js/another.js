@@ -34,19 +34,20 @@ const closeMobileMenu = () => {
 
 const closeMobileByLink = (e) => {
     closeMobileMenu();
-    removNavigationLinkActive();
-    e.target.classList.add("navigation__link--active");
+    // removNavigationLinkActive();
+    // e.target.classList.add("navigation__link--active");
 }
 
-const removNavigationLinkActive = () => {
-    uiElements.dataNavLinks.forEach(link => link.classList.remove("navigation__link--active"));
-}
+// const removNavigationLinkActive = () => {
+//     uiElements.dataNavLinks.forEach(link => link.classList.remove("navigation__link--active"));
+// }
 
-// scroll change navigadion look depends of scrollY position=======================================
+// scroll change navigation look depends of scrollY position =======================================
 const scrollPosition = {
-    callAt: 400,
+    callAt: 200,
     overCallAt: false,
     belowCallAt: false,
+    borderWidth: 200
 }
 
 window.addEventListener('scroll', () => {
@@ -60,4 +61,22 @@ window.addEventListener('scroll', () => {
         scrollPosition.belowCallAt = true;
         uiElements.dataNavBody.classList.remove('navigation__body--small');
     }
-})
+});
+
+// const borderWidth = 200;
+// active navigation on scroll ===============================================
+window.addEventListener('scroll', event => {
+    let navigationLinks = document.querySelectorAll('.navigation__items a')
+
+    let fromTop = window.scrollY;
+
+    navigationLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+
+        if((section.offsetTop - scrollPosition.borderWidth) <= fromTop && section.offsetTop + (section.offsetHeight - scrollPosition.borderWidth) > fromTop) {
+            link.classList.add('navigation__link--active');
+        } else {
+            link.classList.remove('navigation__link--active');
+        }
+    });
+});
