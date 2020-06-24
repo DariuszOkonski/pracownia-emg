@@ -1,0 +1,43 @@
+.footer {
+    background-color: $primary-color;
+    color: $light-color;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: $mobile-large) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__section {
+        text-align: center;
+
+        @media(min-width: $mobile-large) {
+            &--left {
+                text-align: left;
+            }
+
+            &--right {
+                text-align: right;
+            }
+        }
+    }
+
+    &__paragraph {
+        margin-top: 0.5rem;
+
+        span {
+            color: $secondary-color;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: $light-color;
+    }
+}
