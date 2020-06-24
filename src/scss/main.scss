@@ -81,6 +81,20 @@ body {
   }
 }
 
+.border-bottom--small::after {
+  content: '';
+  display: block;
+  margin-top: 6px;
+  width: 20px;
+  height: 2px;
+  background-color: $secondary-color;
+
+  @media(min-width: $tablet) {
+    width: 80px;
+    margin-top: 16px;
+  }
+}
+
 .temp-class {
   width: 100%;
   min-height: 100vh;
