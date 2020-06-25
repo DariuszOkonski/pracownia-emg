@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
+    lightbox: "./src/assets/lightbox-dist/js/lightbox-plus-jquery.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -79,7 +80,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "another"],
+      chunks: ["index", "another", "lightbox"],
       filename: "index.html",
     }),
     // new HtmlWebpackPlugin({
