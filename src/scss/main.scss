@@ -21,7 +21,7 @@ html {
 
 body {
   font-size: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   // overflow: hidden;
 }
 
@@ -29,6 +29,10 @@ body {
 // font-family: 'Pattaya', sans-serif;
 
 // utilities =================
+#start, #emg, #examination, #prices, #lab, #location {
+  overflow: hidden;
+}
+
 .header {
   text-align: center;
   font-size: 1.8rem;
