@@ -1,7 +1,6 @@
 .emg {
     width: 100%;
     min-height: 100vh;
-
     
     background-image: linear-gradient(rgba(240, 255, 250, 0.95), rgba(240, 255, 250, 0.95)),  url('../assets/img/emg-mobile.jpg');
     
@@ -26,7 +25,6 @@
     &__boxes-container {
         background-color: rgba($color: $primary-color, $alpha: 0.2);
         color: $primary-color;
-        // margin-top: 0.75rem;
 
         display: grid;
         grid-template-columns: 1fr;
@@ -46,7 +44,6 @@
             padding-bottom: 3rem;
             background: none;
         }
-
     }
 
     &__footer {

@@ -34,13 +34,7 @@ const closeMobileMenu = () => {
 
 const closeMobileByLink = (e) => {
     closeMobileMenu();
-    // removNavigationLinkActive();
-    // e.target.classList.add("navigation__link--active");
 }
-
-// const removNavigationLinkActive = () => {
-//     uiElements.dataNavLinks.forEach(link => link.classList.remove("navigation__link--active"));
-// }
 
 // scroll change navigation look depends of scrollY position =======================================
 const scrollPosition = {
@@ -63,7 +57,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// const borderWidth = 200;
 // active navigation on scroll ===============================================
 window.addEventListener('scroll', event => {
     let navigationLinks = document.querySelectorAll('.navigation__items a')

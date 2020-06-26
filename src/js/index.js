@@ -1,8 +1,6 @@
 import '../assets/lightbox-dist/css/lightbox.css';
 import '../scss/main.scss';
 
-console.log('HELLO 🚀')
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

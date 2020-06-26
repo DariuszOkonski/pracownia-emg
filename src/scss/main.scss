@@ -21,12 +21,7 @@ html {
 
 body {
   font-size: 100%;
-  // overflow-x: hidden;
-  // overflow: hidden;
 }
-
-
-// font-family: 'Pattaya', sans-serif;
 
 // utilities =================
 #start, #emg, #examination, #prices, #lab, #location {
@@ -199,11 +194,7 @@ body {
       padding-left: 10px;        
   }
 
-
-  // TODO - add styles for pictures
-  // when lightbox library added
   &__gallery {
-    // background-color: red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;

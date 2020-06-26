@@ -1,7 +1,6 @@
 .examination {
     width: 100%;
     min-height: 100vh;
-    // background-color: grey;
 
     background-image: linear-gradient(rgba(0, 52, 89, 0.7), rgba(0, 52, 89, 0.7)),  url('../assets/img/start-mobile.jpg');
     
@@ -20,7 +19,6 @@
 
     &__box-container {
         width: 100%;
-        // border: 1px solid white;
         padding: 0.5rem;
         padding-top: 0;
 
@@ -79,81 +77,3 @@
         }
     }
 }
-
-// .box {
-//     position: relative;
-//     margin-top: 2.5rem;
-//     padding: 0.5rem;
-//     padding-top: 2.5rem;
-//     background-color: rgba($color: $light-color, $alpha: 0.7);
-//     border-radius: 10px;
-//     text-align: center;
-
-//     @media(min-width: $tablet) {
-//         padding-top: 4rem;
-//     }
-
-//     &__circle {
-//         position: absolute;
-//         top: -30px;
-//         left: 50%;
-//         transform: translateX(-50%);
-
-//         width: 60px;
-//         height: 60px;
-//         background-color: $primary-color;
-//         border-radius: 50%;
-
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-
-//         @media(min-width: $tablet) {
-//             top: -40px;
-
-//             width: 80px;
-//             height: 80px;
-//         }
-//     }
-
-//     &__icon {
-//         fill: $secondary-color;
-//         width: 40px;
-//         height: 40px;
-
-//         @media(min-width: $tablet) {
-//             width: 50px;
-//             height: 50px;
-//         }
-//     }
-
-//     &__header {
-//         color: $primary-color;
-//         font-size: 1.25rem;
-//         margin-bottom: 1rem;
-
-//         @media(min-width: $tablet) {
-//             font-size: 1.5rem;
-//         }
-//     }
-
-//     &__paragraph {
-//         color: $primary-color;
-//         font-size: 1rem;
-
-//         &--listed {
-//             text-align: left;
-//         }
-
-//         @media(min-width: $tablet) {
-//             font-size: 1.25rem;
-//             line-height: 1.5rem;
-//         }
-//     }
-
-//     &__items {
-//         list-style-type: none;
-//         text-align: left;
-//         padding-left: 10px;        
-//     }
-// }
