@@ -44,6 +44,7 @@
     "websocket-extensions": "^0.1.4"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "normalize.css": "^8.0.1"
   }
 }
