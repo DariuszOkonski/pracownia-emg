@@ -182,6 +182,14 @@ body {
           text-align: left;
       }
 
+      &--about-me {
+        text-align: left;
+
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+
       @media(min-width: $tablet) {
           font-size: 1.25rem;
           line-height: 1.5rem;
@@ -225,14 +233,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .2s ease-in;
+    transition: opacity .2s ease;
     opacity: 1;
     cursor: pointer;
     
     @media(min-width: $desktop) {
       &:hover {
-        transform: translate(-50%, -50%) scale(1.06);
-        opacity: 0.8;
+        // transform: translate(-50%, -50%) scale(1.06);
+        opacity: 0.9;
       }
     }
   }
