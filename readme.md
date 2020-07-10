@@ -1,6 +1,18 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![JavaScript](public/img/github.png)
+# Pracownia EMG
 
-# WTF Webpack Starter Kit 
+This is real life project for a medical clinic based in Poland. The technologies used in this project were html,
+scss, javascript and webpack. Project was made for mobile and desktop views.
+
+## Tools & Technology used
+
+- Visual Studio Code
+- HTML
+- SCSS
+- JavaScript
+- Webpack
+
+# Webpack Starter Kit 
 
 Simple toolkit for your static websites development.
 
