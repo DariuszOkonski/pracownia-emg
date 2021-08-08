@@ -11,4 +11,4 @@ scss, javascript and webpack. Project was made for mobile and desktop views.
 - JavaScript
 - Webpack
 
-www.pracowniaemg.pl
+https://www.pracowniaemg.pl
